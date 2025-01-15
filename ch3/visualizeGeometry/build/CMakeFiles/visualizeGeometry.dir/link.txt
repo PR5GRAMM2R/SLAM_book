@@ -1,0 +1,1 @@
+/usr/bin/c++ -std=c++11 -rdynamic CMakeFiles/visualizeGeometry.dir/visualizeGeometry.cpp.o -o visualizeGeometry  -Wl,-rpath,/usr/local/lib /usr/local/lib/libpangolin.so -lrt -lpthread -lGL -lGLU -lGLEW -lSM -lICE -lX11 -lXext -lpython3.10 -lpng -lz -ljpeg -ltiff 
