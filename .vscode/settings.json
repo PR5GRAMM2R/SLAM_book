@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "atomic": "cpp",
+        "condition_variable": "cpp",
+        "future": "cpp",
+        "ostream": "cpp"
+    }
+}
