@@ -3,6 +3,7 @@
         "atomic": "cpp",
         "condition_variable": "cpp",
         "future": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }

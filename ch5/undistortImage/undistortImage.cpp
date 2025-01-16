@@ -5,9 +5,14 @@ using namespace std;
 using namespace cv;
 
 string image_file = "../distorted.png";
+
 double k1_temp = -0.28340811;
 double k2_temp = 0.07395907;
-double k1 = k1_temp, k2 = k2_temp, p1 = 0.00019359, p2 = 1.76187114e-05;
+
+double p1_temp = 0.00019359;
+double p2_temp = 1.76187114e-05;
+
+double k1 = k1_temp, k2 = k2_temp, p1 = p1_temp, p2 = p2_temp;
 double fx = 458.654, fy = 457.296, cx = 367.215, cy = 248.375;
 
 int undistort(Mat image)
@@ -52,10 +57,14 @@ int main(int agrc, char** agrv)
     cout << "Press a to decrease k2 10%." << endl;
     cout << "Press r to set k1 to default." << endl;
     cout << "Press f to set k2 to defaul." << endl;
+    cout << "Press u to increase p1 10%." << endl;
+    cout << "Press j to decrease p1 10%." << endl;
+    cout << "Press k to increase p2 10%." << endl;
+    cout << "Press h to decrease p2 10%." << endl;
+    cout << "Press o to set p1 to default." << endl;
+    cout << "Press l to set p2 to defaul." << endl;
 
     Mat image = imread(image_file, 0);
-    int rows = image.rows;
-    int cols = image.cols;
 
     while(1){
         undistort(image);
@@ -74,6 +83,18 @@ int main(int agrc, char** agrv)
             k1 = k1_temp;
         else if(inputKey == 'f')
             k2 = k2_temp;
+        else if(inputKey == 'u')
+            p1 *= 1.1;
+        else if(inputKey == 'j')
+            p1 *= 0.9;
+        else if(inputKey == 'k')
+            p2 *= 1.1;
+        else if(inputKey == 'h')
+            p2 *= 0.9;
+        else if(inputKey == 'o')
+            p1 = k1_temp;
+        else if(inputKey == 'l')
+            p2 = k2_temp;
 
         destroyAllWindows();
     }
