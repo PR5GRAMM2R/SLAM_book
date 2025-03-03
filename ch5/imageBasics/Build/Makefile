@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juhwan/Desktop/slambook/ch5/imageBasics
+CMAKE_SOURCE_DIR = /home/juhwan/Desktop/SLAM_book/ch5/imageBasics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juhwan/Desktop/slambook/ch5/imageBasics/Build
+CMAKE_BINARY_DIR = /home/juhwan/Desktop/SLAM_book/ch5/imageBasics/Build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juhwan/Desktop/slambook/ch5/imageBasics/Build/CMakeFiles /home/juhwan/Desktop/slambook/ch5/imageBasics/Build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/juhwan/Desktop/SLAM_book/ch5/imageBasics/Build/CMakeFiles /home/juhwan/Desktop/SLAM_book/ch5/imageBasics/Build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juhwan/Desktop/slambook/ch5/imageBasics/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/juhwan/Desktop/SLAM_book/ch5/imageBasics/Build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

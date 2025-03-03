@@ -1,5 +1,5 @@
 CMakeFiles/imageBasics.dir/imageBasics.cpp.o: \
- /home/juhwan/Desktop/slambook/ch5/imageBasics/imageBasics.cpp \
+ /home/juhwan/Desktop/SLAM_book/ch5/imageBasics/imageBasics.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
