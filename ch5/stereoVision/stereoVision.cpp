@@ -73,7 +73,7 @@ int main(int agrv, char** agrc)
     vector<Vector4d, aligned_allocator<Vector4d>> pointCloud;
 
     for(int v = 0; v < left.rows; v++){
-        for(int u = 0; u < left.rows; u++){
+        for(int u = 0; u < left.cols; u++){
             if(disparity.at<float>(v, u) <= 10.0 || disparity.at<float>(v, u) >= 96.0)
                 continue;
 
